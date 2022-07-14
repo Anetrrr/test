@@ -14,67 +14,55 @@ body{
     position: relative;
     
 }
-.left{
-    position: absolute;
-    width: 30%;
-    height: 100vh;
-    background-color: #002DA0;
-    ;
-    left:0;
-    right:0;
-    top: 0;
-    bottom: 0
-    
-}
 .container{
-    display: flex;
-    flex-direction: column;
-    padding: 1rem;
-width: 100%;
-position: absolute;
-height:100vh;
-top: 0;
-left: 30%;
-bottom: 0;
-right:0 ;
-
+    background: #FFFFFF;
+    box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    width: 40rem;
+    height: 70vh;
+    margin: 10em auto;
+    position: relative;
+    align-items: center;
+    background-color: #fff;
     
 }
-
-
-form  { display: table;   
-        position: relative;
-        top: 55%;
-        padding: 1.2rem;
-        left: 20%;
-
+.header{
+    text-align: center;
+    padding: 1.7em;
+    border-bottom: 2px rgba(66, 133, 244, 0.3) solid;
 }
-p   { display: table-row;  }
-
-label { 
-        display: table-cell;
-        font-size: 1.2rem; 
-    }
-input { display: table-cell; 
-        width: 400px;
-        height: 35px;
-        margin: 2rem 0 0 10px;
-        font-size: 1rem;
-    }
-        button{
-        width: 400px;
-        position: absolute;
-        top: 60%;
-        left: 31.5%;
-        height: 34px;
-        }
-    
-    /* .dek{
-        background-color: #002DA0;
-        top:0;
-        bottom:0;
-        right:0;
-        left: 50%;
-        position:absolute;
-        text-align: center;
-    } */
+.bottom{
+    text-align: center;
+    padding: 1.7em;
+    position: absolute;
+    bottom: 22%;
+    left: -32px;
+    width: 100%;
+    border-bottom: 2px rgba(66, 133, 244, 0.3) solid;
+}
+.sign{
+    position: absolute;
+    padding: 2rem;
+    width: 100%;
+    height: 100%;
+    left: 5%;
+    top:12%;
+    font-size: 1.1rem;
+    align-items: center;
+}
+input, button{
+    width: 85%;
+    height: 38px;
+    margin-bottom: 13px;
+    border: 2px solid #CACCCB;
+border-radius: 5px;
+padding-left: .5rem;
+}
+button{
+    background: #F2F5FA;
+border: 2px solid #CACCCB;
+border-radius: 5px;
+margin-top: 12px;
+color: #002DA0;
+font-size: 1.1rem;
+}
