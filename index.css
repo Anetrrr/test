@@ -10,6 +10,7 @@ body{
     font-family: 'Poppins', sans-serif;
     font-size: 1rem;
     display: flex;
+    
     justify-content: space-between;
     position: relative;
     
@@ -19,8 +20,10 @@ body{
     box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.25);
     border-radius: 10px;
     width: 40rem;
-    height: 70vh;
-    margin: 10em auto;
+    
+    min-height: 100vh;
+    max-width: 100%   ;
+    margin: 3em auto;
     position: relative;
     align-items: center;
     background-color: #fff;
@@ -35,34 +38,87 @@ body{
     text-align: center;
     padding: 1.7em;
     position: absolute;
-    bottom: 22%;
+    bottom: 14%;
     left: -32px;
     width: 100%;
     border-bottom: 2px rgba(66, 133, 244, 0.3) solid;
 }
-.sign{
+.container .sign{
     position: absolute;
     padding: 2rem;
-    width: 100%;
-    height: 100%;
+    min-width: 100%;
+    min-height: 100%;
+    display: block;
     left: 5%;
     top:12%;
     font-size: 1.1rem;
     align-items: center;
 }
-input, button{
+.form-control input{
     width: 85%;
-    height: 38px;
-    margin-bottom: 13px;
+    height:40px;
     border: 2px solid #CACCCB;
 border-radius: 5px;
 padding-left: .5rem;
+font-family: inherit;
+display:block;
 }
-button{
-    background: #F2F5FA;
-border: 2px solid #CACCCB;
-border-radius: 5px;
-margin-top: 12px;
-color: #002DA0;
-font-size: 1.1rem;
+.form-control.success input {
+    border-color: #2ecc71;
 }
+.form-control.error input {
+    border-color: #e74c3c;
+}
+
+.form-control{
+    position:relative;
+    
+
+}
+.form-control label {
+    display: inline-block;
+    margin-bottom: 5px;
+    font-size: 1.2rem;
+}
+ .form-control i{
+    position: absolute;
+    top: 45px;
+    right:93px;
+    visibility: hidden;
+ }
+ .form-control.success i.fa-check-circle {
+     color:#2ecc71;
+     visibility:visible;
+ }
+ .form-control.error i.fa-exclamation-circle {
+    color:#e74c3c;
+    visibility:visible;
+    
+}
+.form-control.error small{
+    visibility: visible;
+    color:#e74c3c;
+}
+ .form-control small{
+     position:absolute;
+     top: 75px;
+     left:0;
+     visibility: hidden;
+     
+ }
+ button{
+    background: #002DA0;
+    border: 2px solid #CACCCB;
+    border-radius: 5px;
+    margin-top: 20px;
+    color: white;
+    font-size: 1.1rem;
+    width: 85%;
+    height:40px;
+    margin-bottom: 13px;
+    border: 2px solid #CACCCB;
+    border: none;
+    padding-left: .5rem;
+    font-family: inherit;
+    display:block;
+ }
